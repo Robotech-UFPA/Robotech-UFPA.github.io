@@ -1,1 +1,140 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robotech UFPA</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wine: '#903032',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-wine">Robotech</div>
+      <nav class="hidden md:flex gap-6 text-wine text-sm font-medium">
+        <a href="#home" class="hover:text-wine">Home</a>
+        <a href="#about" class="hover:text-wine">Sobre nós</a>
+        <a href="#projects" class="hover:text-wine">Projetos</a>
+        <a href="team.html" class="hover:text-wine">Equipe</a>
+        <a href="sponsors.html" class="hover:text-wine">Apoiadores</a>
+        <a href="#contact" class="hover:text-wine">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="relative w-full h-[500px]">
+    <!-- Background Image -->
+    <img src="images/vsss.jpg" alt="Background" class="absolute inset-0 w-full h-full object-cover" />
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
+    <!-- Logo centered -->
+    <div class="relative z-10 flex items-center justify-center h-full">
+      <img src="images/robotech.png" alt="Robotech Logo" class="w-64 md:w-80 drop-shadow-xl" />
+    </div>
+  </section>
+  
+
+  <!-- About Us -->
+  <section id="about" class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-semibold text-center text-wine mb-6">Sobre nós</h2>
+    <p class="text-lg text-center text-gray-700 leading-relaxed">
+        O projeto Robotech UFPA busca agregar a comunidade acadêmica da Universidade federal do Pará,
+        no desenvolvimento dos projetos de robótica competitivade maneira que os estudantes
+        poderão confrontar na pratica, problemas reais de engenharia, desenvolvendo os projetos
+        desde seus princípios básicos até as fases finais. Além disso, o intuito e de gera a capacitação dos membros participantes,
+        que enquanto elaboram suas pesquisas serão confrontados com temas avançados, os quais terão que ser estudados
+        para além da graduação, os proporcionando experiências que os qualificarão tanto para o
+        mercado de trabalho competitivo quanto no desenvolvimento de pesquisa. 
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gray-200 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center text-wine mb-10">Projetos atuais</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-2xl font-bold text-wine mb-2">Autonomous Line Follower</h3>
+          <p>A self-driving robot that uses infrared sensors to navigate complex tracks with sharp turns and intersections.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-2xl font-bold text-wine mb-2">Robotic Arm for Precision Tasks</h3>
+          <p>A servo-controlled arm capable of precise movements, integrated with vision for object recognition and manipulation.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-2xl font-bold text-wine mb-2">Swarm Bots</h3>
+          <p>A collection of mini-robots communicating with each other to complete complex tasks like area mapping or exploration.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-2xl font-bold text-wine mb-2">Obstacle-Avoiding Drone</h3>
+          <p>An autonomous drone equipped with sensors and algorithms to detect and avoid obstacles in flight.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="#" class="text-wine hover:underline">More projects coming soon →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white py-16">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold text-wine mb-6">Entre em contato!</h2>
+      <p class="text-gray-600 mb-4">
+        Gostaria de colaborar, patrocinar ou se tornar um membro da equipe? Entre em contato!
+      </p>
+      <p class="text-lg text-wine">
+        📧 <a href="mailto:contact@robotech.com" class="hover:underline">robotech.ufpa@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#903032] text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+  
+      <!-- Contact Information -->
+      <div class="mt-6">
+        <p class="text-lg">📧 <a href="mailto:robotech.ufpa@gmail.com" class="text-white hover:text-gray-400">robotech.ufpa@gmail.com</a></p>
+        <p class="text-lg">📍 Robotech Headquarters, Universidade Federal do Pará, Belém, Brasil</p>
+      </div>
+  
+      <!-- Social Media Links with Icons -->
+      <div class="mt-6">
+        <a href="http://instagram.com/robotech_ufpa/" class="text-white hover:text-pink-500 mx-2">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.linkedin.com/company/robotech-ufpa/about/" class="text-white hover:text-blue-700 mx-2">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Robotech-UFPA" class="text-white hover:text-blue-700 mx-2">
+            <i class="fab fa-linkedin-in"></i> GitHub
+        </a>
+        <p>© 2025 <span class="font-semibold">Robotech UFPA</span>. Built by Dhomini. Powered by innovation.</p>
+      </div>
+  </footer>
+  
+  
+
+</body>
+</html>
